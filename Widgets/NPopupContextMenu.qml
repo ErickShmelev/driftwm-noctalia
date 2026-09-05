@@ -311,7 +311,7 @@ PopupWindow {
               enabled: (modelData.enabled !== false) && root.visible
               cursorShape: Qt.PointingHandCursor
 
-              onClicked: {
+              onPressed: {
                 if (menuItem.modelData.enabled !== false) {
                   root.triggered(menuItem.modelData.action || menuItem.modelData.key || menuItem.index.toString(), menuItem.modelData);
                   // Don't call root.close() here - let the parent PopupMenuWindow handle closing

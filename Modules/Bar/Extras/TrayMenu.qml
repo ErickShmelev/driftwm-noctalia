@@ -407,7 +407,7 @@ PopupWindow {
               enabled: (modelData?.enabled ?? true) && !(modelData?.isSeparator ?? false) && root.visible
               acceptedButtons: Qt.LeftButton | Qt.RightButton
 
-              onClicked: mouse => {
+              onPressed: mouse => {
                            if (modelData && !modelData.isSeparator) {
                              if (modelData.hasChildren) {
                                // Click on items with children toggles submenu
